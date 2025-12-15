@@ -1,7 +1,7 @@
 import pygame as pg
 from Const import *
 
-BAT_DEBUG = True
+BAT_DEBUG = False
 
 class Goombas:
     
