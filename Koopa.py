@@ -9,15 +9,13 @@ class RuaKoopa(pygame.sprite.Sprite):
         super().__init__()
 
         self.khung_di = [
-            pygame.image.load("assets/images/koopa_0.png").convert_alpha(),
-            pygame.image.load("assets/images/koopa_1.png").convert_alpha()
+            pygame.image.load("images/koopa_0.png").convert_alpha(),
+            pygame.image.load("images/koopa_1.png").convert_alpha()
         ]
         self.khung_di = [
             pygame.transform.scale(img, (32, 32)) for img in self.khung_di
         ]
-
-        self.hinh_mai = pygame.image.load(
-            "assets/images/koopa_dead.png"
+        self.hinh_mai = pygame.image.load("images/koopa_dead.png")
         ).convert_alpha()
         self.hinh_mai = pygame.transform.scale(self.hinh_mai, (32, 24))
 
